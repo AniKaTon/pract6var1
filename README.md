@@ -1,0 +1,1 @@
+# pract6var1
