@@ -1,0 +1,35 @@
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Практическая 6</title>
+<script type="text/javascript">
+ std=(p1,p2,p3,p4) =>
+ {
+	let p = [p1, p2,p3,p4];
+	let  student = {name:"",years:0,gender:"",college:""};
+	for(i=0;i<4;i++){
+		if(p[i]=='нет' || p[i]=='да'){
+			student.college=p[i];
+			continue;
+		} 
+		if(p[i]=='ж' || p[i]=='м'){
+			student.gender=p[i];
+			continue;
+		} 
+		if(typeof(p[i])=="number"){
+			student.years=p[i];
+			continue;
+		} 
+		if(typeof(p[i])=="string" ){
+			student.name=p[i];
+			continue;
+		} 
+	}
+return student;
+}
+</script>
+</head>
+<body >
+</body>
+</html>
